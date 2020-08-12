@@ -1,0 +1,25 @@
+<ion-header style="background:green ; color:white; text-align: center;">
+  <ion-toolbar color="primary">
+    <ion-title >Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="login" color="primary">
+  <ion-card id="card">
+  <ion-item>
+    <ion-label position="floating"><ion-icon name="person-circle-outline"></ion-icon>USER NAME</ion-label>
+    <ion-input type="text" #username [ngModel]="myusername"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating"><ion-icon name="lock-closed-outline"></ion-icon>PASSWORD</ion-label>
+    <ion-input type="password" #passwd [ngModel]="mypassword"></ion-input>
+  </ion-item>
+  
+  <ion-button color="success" (click)="login(username.value, passwd.value)"><ion-icon name="send-outline"></ion-icon>
+    Login
+  </ion-button>
+  <ion-button color="warning" href="register"><ion-icon name="enter-outline"></ion-icon>
+    Register
+  </ion-button>
+</ion-card>
+</ion-content>

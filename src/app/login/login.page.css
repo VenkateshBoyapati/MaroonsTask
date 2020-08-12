@@ -1,0 +1,14 @@
+#card{
+    margin-top: 100px;
+    margin-left: 65px;
+    width: 250px;
+    border: 1px solid blue;
+        
+}
+.login{
+  background-color: gray;
+}
+ion-content{
+
+    --ion-background-color:#c7d6d9;
+}

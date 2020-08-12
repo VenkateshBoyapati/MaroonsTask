@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+
+  
+  <ion-item>
+    <ion-label position="floating">FIRST NAME</ion-label>
+    <ion-input type="string"  #firstname></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">LAST NAME</ion-label>
+    <ion-input type="string"  #lastname></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">MOBILE NUMBER</ion-label>
+    <ion-input type="number"  #mobileno></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">USER NAME</ion-label>
+    <ion-input type="text" #username></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">PASSWORD</ion-label>
+    <ion-input type="password"  #password></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="file" #image>Image</ion-input>
+</ion-item>
+ 
+  <ion-button color="primary" (click)="register(image.value ,firstname.value,lastname.value,mobileno.value,username.value,password.value)"><ion-icon name="enter-outline"></ion-icon>
+    Register
+  </ion-button>
+  <ion-button color="secondary" href="login"><ion-icon name="send-outline"></ion-icon>
+    Login
+  </ion-button>
+</ion-content>

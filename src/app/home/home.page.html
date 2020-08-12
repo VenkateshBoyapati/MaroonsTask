@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="Primary">
+    <ion-title>
+      Profile
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+  <ion-header collapse="condense">
+    <ion-toolbar >
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container" >
+    <ion-card >
+      <ion-img src="/assets/download.jpg"></ion-img>     
+      <h2>First Name:{{firstname}}</h2>
+      <h2>Last Name : {{lastname}}</h2>
+      <h2>User Name:{{getusername}}</h2>
+      <h2>Mobile Number : {{getmobile}}</h2>
+    </ion-card>
+    <ion-button color="secondary" href="login"><ion-icon name="power-outline"></ion-icon>
+      Logout
+    </ion-button>
+  </div>
+</ion-content>
